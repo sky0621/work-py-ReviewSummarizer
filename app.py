@@ -17,7 +17,7 @@ def index():
 @route('/sum', method="POST")
 def sum():
     review = unicode(request.forms.get("review"), 'utf-8')
-  	sentences, debug_info = summarize(review, sent_limit=3, continuous=True, debug=True)
+    sentences, debug_info = summarize(review, sent_limit=3, continuous=True, debug=True)
     sumres = ""
     for sent in sentences:
         sumres = sumres + sent
