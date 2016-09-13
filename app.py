@@ -1,7 +1,7 @@
 import os
 import sys
 from bottle import route, run, template, request
-#from summpy.lexrank import summarize
+from summpy.lexrank import summarize
 
 @route('/')
 def index():
