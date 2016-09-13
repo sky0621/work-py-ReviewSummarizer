@@ -3,6 +3,6 @@ scipy
 scikit-learn
 networkx
 cherrypy
-MeCab
+mecab-python3
 pulp
 summpy
