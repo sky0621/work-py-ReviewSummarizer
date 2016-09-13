@@ -1,7 +1,7 @@
 import os
 import sys
 from bottle import route, run, template, request
-from summpy.lexrank import summarize
+#from summpy.lexrank import summarize
 
 @route('/')
 def index():
@@ -17,15 +17,15 @@ def index():
 @route('/sum', method="POST")
 def sum():
     review = unicode(request.forms.get("review"), 'utf-8')
-    try:
-   	    sentences, debug_info = summarize(review, sent_limit=3, continuous=True, debug=True)
-    except:
-        print sys.exc_info()[0]
-        raise
+#    try:
+#   	    sentences, debug_info = summarize(review, sent_limit=3, continuous=True, debug=True)
+#    except:
+#        print sys.exc_info()[0]
+#        raise
 
     sumres = ""
-    for sent in sentences:
-        sumres = sumres + sent
+#    for sent in sentences:
+#        sumres = sumres + sent
 
     out = """
         <h1>Summarize Result.</h1>
