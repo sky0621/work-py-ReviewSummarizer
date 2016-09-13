@@ -1,3 +1,4 @@
+import os
 from bottle import route, run, template, request
 
 @route('/')
@@ -16,4 +17,5 @@ def sum():
     review = request.forms.get("review")
     return template('<b>{{review}}</b>', review=review)
 
-run(host='localhost', port=7171)
+run(host='0.0.0.0', port=int(os.environ.get("PORT", 5364)))
+
