@@ -1,8 +1,5 @@
 numpy
-scipy
 scikit-learn
 networkx
 cherrypy
-mecab-python
 pulp
-summpy
