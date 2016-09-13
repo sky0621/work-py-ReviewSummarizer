@@ -3,3 +3,5 @@ scikit-learn
 networkx
 cherrypy
 pulp
+mecab-python
+summpy

@@ -1,3 +1,1 @@
 scipy
-mecab-python
-summpy
