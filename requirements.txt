@@ -1,7 +1,10 @@
-numpy
-scikit-learn
-networkx
-cherrypy
-pulp
-mecab-python3
-summpy
+CherryPy==8.1.0
+decorator==4.0.10
+networkx==1.11
+numpy==1.11.1
+pandas==0.18.1
+python-dateutil==2.5.3
+pytz==2016.6.1
+scikit-learn==0.17.1
+six==1.10.0
+summpy==0.2.1
