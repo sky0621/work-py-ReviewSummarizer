@@ -33,5 +33,5 @@ def sum():
     return template(out, review=review, sumres=sumres)
 
 if __name__ == "__main__":
-	daemon_run(host="tk2-231-25301.vs.sakura.ne.jp", port="5364")
+	daemon_run(host="tk2-231-25301.vs.sakura.ne.jp", port="80")
 
