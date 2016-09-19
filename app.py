@@ -1,6 +1,5 @@
 import os
 import sys
-from bottledaemon import daemon_run
 from bottle import route, run, template, request
 from summpy.lexrank import summarize
 
@@ -32,6 +31,5 @@ def sum():
     """
     return template(out, review=review, sumres=sumres)
 
-if __name__ == "__main__":
-	daemon_run(host="【ドメイン】", port="80")
+run(host='0.0.0.0', port=80, reloader=True)
 
